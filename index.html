@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="contact-form/contact-form-main/assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Formulario</title>
+</head>
+<body>
+    <main class="container">
+
+        <h1 class="title">Contact Us</h1>
+
+        <form>
+
+            <div class="group-name">
+
+                <div class="first-child">
+                    <label for="fname" class="block">Frist-Name</label>
+                    <input type="text" id="fname">
+                    <p class="message-error"></p>
+                </div>
+
+                <div>
+                    <label for="lname" class="block">Last-Name</label>
+                    <input type="text" id="lname">
+                </div>
+
+            </div>
+
+            <div class="group-email">
+                <label for="email" class="block">Email Address</label>
+                <input type="text" id="email">
+            </div>
+
+            <fieldset>
+                <legend>Query Type *</legend>
+
+                <span>
+                    <input type="radio" id="general" name="query">
+                    <label for="general" class="general">General Enquirity</label>
+                </span>
+
+                <span>
+                    <input type="radio" id="suport" name="query">
+                    <label for="suport" class="suport">Support Request</label>
+                </span>
+            </fieldset>
+
+            <div class="group-message">
+                <label for="message" class="block">Message *</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+
+            <div class="block">
+                <input type="checkbox" id="term">
+                <label for="term" >I consent to being contacted by the team</label>
+            </div>
+
+            <button type="button" onclick="validator()" class="block">Submit</button>
+        </form>
+    </main>
+    
+    <script src="scipt.js"></script>
+</body>
+</html>

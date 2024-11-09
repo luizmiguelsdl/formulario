@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    --Green-200-lighter: hsl(148, 38%, 91%);
+    --Green-600-medium: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    
+    --White: hsl(0, 0%, 100%);
+    --Grey-500-medium: hsl(186, 15%, 59%);
+    --Grey-900-darker: hsl(187, 24%, 22%);
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Green-200-lighter);
+}
+
+
+.title{
+    margin-bottom: 20px;
+}
+
+.block{
+    display: block;
+}
+
+.group-name{
+    display: flex;
+}
+
+.container{
+    width: 700px;
+    height: 430px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+textarea{
+    border-radius: 5px;
+    border: 1px solid var(--Grey-500-medium);
+    padding: 5px;
+    width: 99%;
+    height: 80px;
+}
+
+input[type="text"],
+input[type="email"]{
+    margin-right: 20px;
+}
+
+.first-child{
+    margin-right: 20px;
+}
+
+.group-name{
+    margin-bottom: 10px;
+}
+
+#fname{
+    height: 40px;
+    width: 320px;
+    border-radius: 5px;
+    border: 1px solid var(--Grey-500-medium);
+}
+
+#general{
+    width: 100px;
+}
+
+#suport{
+    width: 250px;
+}
+
+#email{
+    height: 40px;
+    width: 703px;
+    border-radius: 5px;
+    border: 1px solid var(--Grey-500-medium);
+}
+
+#lname{
+    height: 40px;
+    width: 340px;
+    border-radius: 5px;
+    border: 1px solid var(--Grey-500-medium);
+}
+button{
+    background-color: var(--Green-600-medium);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--White);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+fieldset{
+    width: 704px;
+    border-radius: 5px;
+    border: 1px solid var(--Grey-500-medium);
+}
+
+.erro{
+    border: 1px solid var(--Red) !important;
+}
+
+.message-error{
+    color: var(--Red);
+}
